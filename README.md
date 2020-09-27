@@ -5,6 +5,6 @@ Springboot Web Service With AWS
 
 해당 책에 대한 글에 대한 공부내용은 다음 링크에 있습니다.
 
-- Azderica.github.io
+- https://Azderica.github.io
 
 
