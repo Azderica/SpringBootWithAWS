@@ -2,3 +2,7 @@
 .gradle
 .idea
 .ds_store
+
+#oauth
+application-oauth.properties
+
