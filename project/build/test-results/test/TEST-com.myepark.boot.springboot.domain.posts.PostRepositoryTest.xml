@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.myepark.boot.springboot.domain.posts.PostRepositoryTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2020-10-07T20:49:48" hostname="LM-SEL-16517091" time="0.015">
+<testsuite name="com.myepark.boot.springboot.domain.posts.PostRepositoryTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2020-10-07T21:00:18" hostname="LM-SEL-16517091" time="0.015">
   <properties/>
-  <testcase name="게시글저장_불러오기" classname="com.myepark.boot.springboot.domain.posts.PostRepositoryTest" time="0.01">
+  <testcase name="게시글저장_불러오기" classname="com.myepark.boot.springboot.domain.posts.PostRepositoryTest" time="0.011">
     <failure message="org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
@@ -15,14 +15,14 @@
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy140.save(Unknown Source)
+	at com.sun.proxy.$Proxy139.save(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
-	at com.sun.proxy.$Proxy112.save(Unknown Source)
+	at com.sun.proxy.$Proxy113.save(Unknown Source)
 	at com.myepark.boot.springboot.domain.posts.PostRepositoryTest.게시글저장_불러오기(PostRepositoryTest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -111,7 +111,7 @@ Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statem
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
-	at com.sun.proxy.$Proxy134.persist(Unknown Source)
+	at com.sun.proxy.$Proxy135.persist(Unknown Source)
 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -169,14 +169,14 @@ insert into posts (created_date, modified_date, author, content, title) values (
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy140.deleteAll(Unknown Source)
+	at com.sun.proxy.$Proxy139.deleteAll(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
-	at com.sun.proxy.$Proxy112.deleteAll(Unknown Source)
+	at com.sun.proxy.$Proxy113.deleteAll(Unknown Source)
 	at com.myepark.boot.springboot.domain.posts.PostRepositoryTest.cleanup(PostRepositoryTest.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -319,14 +319,14 @@ select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modif
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy140.save(Unknown Source)
+	at com.sun.proxy.$Proxy139.save(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
-	at com.sun.proxy.$Proxy112.save(Unknown Source)
+	at com.sun.proxy.$Proxy113.save(Unknown Source)
 	at com.myepark.boot.springboot.domain.posts.PostRepositoryTest.BaseTimeEntity_등록(PostRepositoryTest.java:52)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -415,7 +415,7 @@ Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statem
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
-	at com.sun.proxy.$Proxy134.persist(Unknown Source)
+	at com.sun.proxy.$Proxy135.persist(Unknown Source)
 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -473,14 +473,14 @@ insert into posts (created_date, modified_date, author, content, title) values (
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy140.deleteAll(Unknown Source)
+	at com.sun.proxy.$Proxy139.deleteAll(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
-	at com.sun.proxy.$Proxy112.deleteAll(Unknown Source)
+	at com.sun.proxy.$Proxy113.deleteAll(Unknown Source)
 	at com.myepark.boot.springboot.domain.posts.PostRepositoryTest.cleanup(PostRepositoryTest.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -609,12 +609,12 @@ select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modif
 	... 107 more
 </failure>
   </testcase>
-  <system-out><![CDATA[2020-10-08 05:49:42.979  INFO 3213 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.myepark.boot.springboot.domain.posts.PostRepositoryTest], using SpringBootContextLoader
-2020-10-08 05:49:42.979  INFO 3213 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.myepark.boot.springboot.domain.posts.PostRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-10-08 05:49:42.979  INFO 3213 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.myepark.boot.springboot.domain.posts.PostRepositoryTest]: PostRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2020-10-08 05:49:42.985  INFO 3213 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.myepark.boot.springboot.Application for test class com.myepark.boot.springboot.domain.posts.PostRepositoryTest
-2020-10-08 05:49:42.986  INFO 3213 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-10-08 05:49:42.986  INFO 3213 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7e827f99, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@796a9d47, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a0dbcdc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3ee4f4d3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@53773a21, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e5a05ad, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@69a6bde6, org.springframework.test.context.event.EventPublishingTestExecutionListener@70fd9e6d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1a310461, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34e81de7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@68fdcf11, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@746f2a95, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@66ef3a75, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@121c046a]
+  <system-out><![CDATA[2020-10-08 06:00:12.635  INFO 3408 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.myepark.boot.springboot.domain.posts.PostRepositoryTest], using SpringBootContextLoader
+2020-10-08 06:00:12.636  INFO 3408 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.myepark.boot.springboot.domain.posts.PostRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-10-08 06:00:12.636  INFO 3408 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.myepark.boot.springboot.domain.posts.PostRepositoryTest]: PostRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-10-08 06:00:12.643  INFO 3408 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.myepark.boot.springboot.Application for test class com.myepark.boot.springboot.domain.posts.PostRepositoryTest
+2020-10-08 06:00:12.644  INFO 3408 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-10-08 06:00:12.645  INFO 3408 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@661b6c88, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d0412a8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@595f8542, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@235a6fb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ff7e519, org.springframework.test.context.transaction.TransactionalTestExecutionListener@520b211d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@775bcb8b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5876b9e5, org.springframework.test.context.event.EventPublishingTestExecutionListener@582940df, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5321910e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a8f1f72, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@17db3857, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@566bdcb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5a10f588, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@58661537, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@163197ec]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -624,19 +624,19 @@ select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modif
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.1.RELEASE)
 
-2020-10-08 05:49:48.005  INFO 3213 --- [    Test worker] c.m.b.s.domain.posts.PostRepositoryTest  : Starting PostRepositoryTest on LM-SEL-16517091 with PID 3213 (started by myepark in /Users/myepark/Downloads/myGit/SpringBootWithAWS/project)
-2020-10-08 05:49:48.006  INFO 3213 --- [    Test worker] c.m.b.s.domain.posts.PostRepositoryTest  : No active profile set, falling back to default profiles: default
-2020-10-08 05:49:48.153  INFO 3213 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-08 05:49:48.165  INFO 3213 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 2 JPA repository interfaces.
-2020-10-08 05:49:48.270  INFO 3213 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-08 05:49:48.272  INFO 3213 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2020-10-08 05:49:48.274  INFO 3213 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2020-10-08 05:49:48.284  INFO 3213 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-08 05:49:48.288  INFO 3213 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-10-08 06:00:17.666  INFO 3408 --- [    Test worker] c.m.b.s.domain.posts.PostRepositoryTest  : Starting PostRepositoryTest on LM-SEL-16517091 with PID 3408 (started by myepark in /Users/myepark/Downloads/myGit/SpringBootWithAWS/project)
+2020-10-08 06:00:17.666  INFO 3408 --- [    Test worker] c.m.b.s.domain.posts.PostRepositoryTest  : No active profile set, falling back to default profiles: default
+2020-10-08 06:00:17.829  INFO 3408 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-08 06:00:17.841  INFO 3408 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 2 JPA repository interfaces.
+2020-10-08 06:00:17.947  INFO 3408 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 06:00:17.949  INFO 3408 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-10-08 06:00:17.951  INFO 3408 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-10-08 06:00:17.961  INFO 3408 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-08 06:00:17.965  INFO 3408 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 Hibernate: drop table if exists posts
 Hibernate: drop table if exists user
 Hibernate: create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(600) not null, primary key (id)) engine=InnoDB
-2020-10-08 05:49:48.319  WARN 3213 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(600) not null, primary key (id)) engine=InnoDB" via JDBC Statement
+2020-10-08 06:00:18.001  WARN 3408 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(600) not null, primary key (id)) engine=InnoDB" via JDBC Statement
 
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(600) not null, primary key (id)) engine=InnoDB" via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
@@ -682,7 +682,7 @@ create table posts (id bigint not null auto_increment, created_date datetime, mo
 	... 18 common frames omitted
 
 Hibernate: create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB
-2020-10-08 05:49:48.320  WARN 3213 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB" via JDBC Statement
+2020-10-08 06:00:18.002  WARN 3408 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB" via JDBC Statement
 
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB" via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
@@ -727,31 +727,31 @@ create table user (id bigint not null auto_increment, created_date datetime, mod
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
 	... 18 common frames omitted
 
-2020-10-08 05:49:48.320  INFO 3213 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-08 05:49:48.321  INFO 3213 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-08 05:49:48.323  WARN 3213 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-08 05:49:48.420  INFO 3213 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b0ea72a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c2dcbd, org.springframework.security.web.header.HeaderWriterFilter@384f2c6e, org.springframework.security.web.authentication.logout.LogoutFilter@72e1f256, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5b0edbe8, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@538c9864, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4913cc15, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@63cbe3fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33a3a9ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72cedfeb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4eb7b5f4, org.springframework.security.web.session.SessionManagementFilter@7fb89bdc, org.springframework.security.web.access.ExceptionTranslationFilter@2a73444c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c2e9469]
-2020-10-08 05:49:48.534  INFO 3213 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-10-08 05:49:48.612  INFO 3213 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e695ca3b-3e94-473a-b894-65df51de2b01'
-2020-10-08 05:49:48.687  INFO 3213 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-10-08 05:49:48.730  INFO 3213 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-10-08 05:49:48.732  INFO 3213 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2020-10-08 05:49:48.732  INFO 3213 --- [    Test worker] c.m.b.s.domain.posts.PostRepositoryTest  : Started PostRepositoryTest in 5.745 seconds (JVM running for 13.619)
+2020-10-08 06:00:18.002  WARN 3408 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-08 06:00:18.003  INFO 3408 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-08 06:00:18.004  INFO 3408 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-08 06:00:18.112  INFO 3408 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72f3a452, org.springframework.security.web.context.SecurityContextPersistenceFilter@38e0db08, org.springframework.security.web.header.HeaderWriterFilter@40ac6f17, org.springframework.security.web.authentication.logout.LogoutFilter@3cdfcf8a, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@9a08c15, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@44c2de22, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@38d1d6e4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7b9a9cde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42cf1fb2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61b8142b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76d7779c, org.springframework.security.web.session.SessionManagementFilter@7f44de96, org.springframework.security.web.access.ExceptionTranslationFilter@5ae41630, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ad47684]
+2020-10-08 06:00:18.239  INFO 3408 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-08 06:00:18.329  INFO 3408 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:2c9e050f-d689-4d4e-b759-573e983e6891'
+2020-10-08 06:00:18.403  INFO 3408 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-08 06:00:18.445  INFO 3408 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-08 06:00:18.447  INFO 3408 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-10-08 06:00:18.447  INFO 3408 --- [    Test worker] c.m.b.s.domain.posts.PostRepositoryTest  : Started PostRepositoryTest in 5.801 seconds (JVM running for 14.101)
 Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
-2020-10-08 05:49:48.746  WARN 3213 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42102, SQLState: 42S02
-2020-10-08 05:49:48.746 ERROR 3213 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "POSTS" not found; SQL statement:
+2020-10-08 06:00:18.456  WARN 3408 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42102, SQLState: 42S02
+2020-10-08 06:00:18.456 ERROR 3408 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "POSTS" not found; SQL statement:
 insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?) [42102-200]
 Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2020-10-08 05:49:48.748  WARN 3213 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42102, SQLState: 42S02
-2020-10-08 05:49:48.748 ERROR 3213 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "POSTS" not found; SQL statement:
+2020-10-08 06:00:18.459  WARN 3408 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42102, SQLState: 42S02
+2020-10-08 06:00:18.459 ERROR 3408 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "POSTS" not found; SQL statement:
 select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_ [42102-200]
 Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
-2020-10-08 05:49:48.752  WARN 3213 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42102, SQLState: 42S02
-2020-10-08 05:49:48.752 ERROR 3213 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "POSTS" not found; SQL statement:
+2020-10-08 06:00:18.462  WARN 3408 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42102, SQLState: 42S02
+2020-10-08 06:00:18.462 ERROR 3408 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "POSTS" not found; SQL statement:
 insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?) [42102-200]
 Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2020-10-08 05:49:48.753  WARN 3213 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42102, SQLState: 42S02
-2020-10-08 05:49:48.753 ERROR 3213 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "POSTS" not found; SQL statement:
+2020-10-08 06:00:18.464  WARN 3408 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42102, SQLState: 42S02
+2020-10-08 06:00:18.464 ERROR 3408 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "POSTS" not found; SQL statement:
 select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_ [42102-200]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
