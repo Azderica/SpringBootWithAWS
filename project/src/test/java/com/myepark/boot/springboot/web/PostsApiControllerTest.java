@@ -109,8 +109,6 @@ public class PostsApiControllerTest {
 
         String url = "http://localhost:" + port + "/api/v1/posts/" + updatedId;
 
-        HttpEntity<PostsUpdateRequestDto> requestEntity = new HttpEntity<>(requestDto);
-
         // when
         mvc.perform(post(url)
                 .contentType(MediaType.APPLICATION_JSON)
